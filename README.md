@@ -1,4 +1,4 @@
-A minimal test to pinpoint a possible memory bug. Tokens.sol implements a "bad ERC20" with no return value from the `transfer` function, and TestTokens.t.sol emits events with the memory slot that the expected return value would have been copied to.
+A minimal test to pinpoint a possible memory bug. Tokens.sol implements a "bad ERC20" with no return value from the `transfer` function, and TestTokens.t.sol emits events with the memory slot that the expected return value would have been copied to. The same test can be run against other EVM implementations using the truffle version [here](https://github.com/nsward/mem-bug-truffle).
 
 ## Usage
 Requires [dapptools](https://dapp.tools/) to run.
